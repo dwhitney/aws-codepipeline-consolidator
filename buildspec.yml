@@ -6,7 +6,9 @@ phases:
     commands: 
       - env 
       - 'ls -la ../'
-      - 'tar -czf bundle.tar.gz ../01 ../02 ../03'
+      - 'cd ..'
+      - 'tar -czf $CODEBUILD_SRC_DIR/consolidated.tar.gz 00 01 02 03'
+      - 'cd $CODEBUILD_SRC_DIR'
 
 
 artifacts:
