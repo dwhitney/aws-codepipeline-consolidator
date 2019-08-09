@@ -6,10 +6,11 @@ phases:
     commands: 
       - env 
       - 'ls -la ../'
+      - 'tar -czf bundle.tar.gz ../01 ../02 ../03'
+
 
 artifacts:
   files:
-    - '../**/*'
-  discard-paths: no
+    - 'consolidated.tar.gz'
 
 
