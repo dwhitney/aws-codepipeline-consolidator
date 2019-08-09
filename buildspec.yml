@@ -8,8 +8,6 @@ phases:
 
   build: 
     commands: 
-      - env 
-      - 'ls -la ../'
       - 'cd ..'
       - 'tar -czf $CODEBUILD_SRC_DIR/consolidated.tar.gz 01 02 03'
       - 'cd $CODEBUILD_SRC_DIR'
