@@ -9,7 +9,7 @@ phases:
   build: 
     commands: 
       - 'cd ..'
-      - 'tar -czf $CODEBUILD_SRC_DIR/consolidated.tar.gz 01 02 03'
+      - 'tar -czf $CODEBUILD_SRC_DIR/consolidated.tar.gz 01 02 03 04'
       - 'cd $CODEBUILD_SRC_DIR'
 
 
